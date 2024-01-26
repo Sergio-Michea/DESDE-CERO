@@ -33,7 +33,7 @@
     background-image: url('https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/07/cyberpunk-2077-1992991.jpg?tf=3840x');
     background-size: cover;
     background-position: center;
-    padding: 155px;
+    padding: 100px;
     position: absolute;
     width:100%;
 }
@@ -136,20 +136,23 @@
     top: 50cap;
     text-align: center;
 }
-
-nav div.container3{
-    background-color: #004940;
-    width: 100%;
+.container3{
+    background-color: rgba(3, 92, 3, 0.195);
+    width:80%;
 }
-nav div.container3 input{
-    width: 320px;
+.container3 input{
+    width:80%;
 }
-nav div.container3 button{
-    background-color: #e4d5b7;
+.container3 button{
+    align-items: right;
+    background-color: rgba(255, 255, 255, 0.804);
     color: #827968;
     border: none;
 }
-nav div.container3 button:hover{
+.container3 button:hover{
     background-color:#827968;
     color: #ebeae7;
+}
+.ubicacion{
+    align-content: end;
 }
