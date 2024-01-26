@@ -1,0 +1,155 @@
+
+
+.navbar {
+    position: relative;
+}
+
+.navbar-text {
+    position: absolute;
+    top: 10;
+    right: 20px;
+    
+}
+
+.nav-logo {
+    height: 100px;
+    margin-right: 26px;
+    filter: brightness(1);
+}
+
+.navbar {
+    background-color: #f4f7f8 !important;
+}
+
+.navbar {
+    height: 78px;
+    
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/07/cyberpunk-2077-1992991.jpg?tf=3840x');
+    background-size: cover;
+    background-position: center;
+    padding: 155px;
+    position: absolute;
+    width:100%;
+}
+
+.left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.left h1 {
+    color: #ebeae7;
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-align: left;
+    left: 500px;
+    top: 200px;
+}
+
+.left a {
+    background: #bcb7e4;
+    color: #827968;
+    font-weight: bold;
+    padding: 4px 25px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.left a:hover {
+    background-color: #827968;
+    color: #ebeae7;
+}
+
+.left h2 {
+    color: rgb(239, 239, 244);
+    font-size: 20px;
+    font-weight: 100;
+    word-spacing: 5px;
+    margin-top: 40px;
+
+}
+
+.titulo1 h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(207, 46, 143);
+    position: absolute;
+    margin: 20px;
+    left: 38%;
+    top:110%;
+    
+}
+.titulo1 h4 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-top: 590px;
+    color: rgb(19, 17, 18);
+    top: 55px;
+    position: absolute;
+    left: 760px;
+}
+
+.titulo1 h5 {
+    font-size: 20px;
+    margin-top: 1.25rem;
+    color: azure;
+
+}
+
+.left p {
+    color: inherit;
+    width: 70%;
+    font-size: 14px;
+
+}
+.contenedor10{
+    padding:60px 80px ;
+    background-color: var(--secondary-main);
+}
+  
+
+.contenedor22{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(57, 46, 207);
+    margin: 50px;
+    left: 0%;
+    top: 50px;
+    
+}
+
+.container55{
+    position: absolute;
+    margin: 20px;
+    left: 40%;
+    top: 50cap;
+    text-align: center;
+}
+
+nav div.container3{
+    background-color: #004940;
+    width: 100%;
+}
+nav div.container3 input{
+    width: 320px;
+}
+nav div.container3 button{
+    background-color: #e4d5b7;
+    color: #827968;
+    border: none;
+}
+nav div.container3 button:hover{
+    background-color:#827968;
+    color: #ebeae7;
+}
