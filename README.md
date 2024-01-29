@@ -6,7 +6,9 @@ Este es mi primer proyecto, un landing de venta en HTML y CSS.
 
 Visualización
 
-Para ver este proyecyo haz click en el link del repositorio.
+Para ver este proyecyo haz click en el link en el siguiente link:
+
+https://landingpage-transporte-vertical.netlify.app/
 
 Uso
 
