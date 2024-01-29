@@ -134,6 +134,7 @@ body {
 .flex-container img {
     width: calc((100% - 20px) / 4); /* Calcular el ancho para tres imágenes, restando el espacio entre ellas */
     max-width: 300px; /* Limitar el ancho máximo de las imágenes */
+    border-radius: 10px;
 }
 
 .registro{
