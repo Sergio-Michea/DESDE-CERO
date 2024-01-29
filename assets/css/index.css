@@ -1,158 +1,225 @@
-
-
-.navbar {
-    position: relative;
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-text {
-    position: absolute;
-    top: 10;
-    right: 20px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para el header */
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     
 }
 
-.nav-logo {
-    height: 100px;
-    margin-right: 26px;
-    filter: brightness(1);
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.navbar {
-    background-color: #f4f7f8 !important;
-}
-
-.navbar {
-    height: 78px;
+.nav-link {
+    color: #070000;
+    text-decoration: none;
     
 }
 
-.contenedor {
+.nav-logo{
+    width: 100px; /* Ancho del logo */
+    height: 50px; /* Altura automática para mantener la proporción */
+    display: block; /* Para asegurar que no haya espacio adicional debajo del logo */
+    margin: 0 auto; /* Centrar el logo horizontalmente */
+}
+
+
+/* Estilos para el jumbotron */
+.jumbotron {
+    background-color: #b6d3f0;
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+.img {
+    display: block; /* Cambiamos display a block para que ocupe el ancho completo del contenedor */
+    max-width: 100%; /* Establecemos el ancho máximo al 100% del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    max-height: 400px; /* Limitamos la altura máxima a 400px */
+    margin: 0 auto; /* Centramos horizontalmente la imagen */
+    padding: 10px;
+    transform: scaleX(1.5); /* Escalamos la imagen horizontalmente en un 50% */
+}
+
+/* Media queries para ajustar el tamaño de la imagen en dispositivos diferentes */
+@media only screen and (max-width: 600px) {
+    .img {
+        transform: scaleX(1); /* Restauramos la escala horizontal a 100% en dispositivos más pequeños */
+        max-height: none; /* Quitamos la limitación de altura máxima en dispositivos más pequeños */
+    }
+}
+.jumbotron h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#centro-pantalla {
+    display: block;
+    margin: auto; /* Centra horizontalmente el elemento */
+    text-align: center; /* Centra el texto dentro del elemento */
+    left: 50px;
+}
+
+
+.jumbotron h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.nombre_de_la_clase {
+    max-width: 100px; /* La imagen no debe exceder el ancho de su contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    width: 100px; /* Ancho deseado para la imagen en dispositivos de pantalla grande */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+
+/* Estilos base del botón */
+.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #f80505;
+    border-radius: 5px;
+    color: #ede0e2;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para el botón en estado de hover */
+.custom-btn:hover {
+    background-color: #f70707;
+    color: #f8f2f2;
+}
+
+.articulos {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan en múltiples líneas */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    align-items: center; /* Centrar las imágenes verticalmente si es necesario */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.flex-container img {
+    width: calc((100% - 20px) / 4); /* Calcular el ancho para tres imágenes, restando el espacio entre ellas */
+    max-width: 300px; /* Limitar el ancho máximo de las imágenes */
+}
+
+.registro{
+    text-align: center;
+    background-color: #070000;
+    color: #f8f2f2;
+}
+
+/* Estilos para el blog */
+
+.titulo2 {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; /* Esto centra horizontalmente las tarjetas */
+
+}
+
+.card {
+    flex: 1;
+    max-width: 300px;
+    min-width: 200px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card img.card-img-top {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card-avatar {
+    display: flex;
     align-items: center;
-    background-image: url('https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/07/cyberpunk-2077-1992991.jpg?tf=3840x');
-    background-size: cover;
-    background-position: center;
-    padding: 100px;
-    position: absolute;
-    width:100%;
+    gap: 8px;
+    padding: 0 16px 12px;
 }
 
-.left {
-    flex: 1;
-    padding-right: 20px;
+.card-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.right {
-    flex: 1;
-    padding-left: 20px;
+.card-avatar div {
+    display: flex;
+    flex-direction: column;
 }
 
-.left h1 {
-    color: #ebeae7;
-    font-size: 3.2rem;
-    font-weight: 900;
-    text-align: left;
-    left: 500px;
-    top: 200px;
-}
-
-.left a {
-    background: #bcb7e4;
-    color: #827968;
+.card-avatar h6 {
+    font-size: 14px;
     font-weight: bold;
-    padding: 4px 25px;
-    border-radius: 15px;
+    margin: 0;
+}
+
+.card-avatar span {
+    font-size: 14px;
+    color: var(--primary-main);
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: #fff;
     text-decoration: none;
 }
 
-.left a:hover {
-    background-color: #827968;
-    color: #ebeae7;
-}
-
-.left h2 {
-    color: rgb(239, 239, 244);
-    font-size: 20px;
-    font-weight: 100;
-    word-spacing: 5px;
-    margin-top: 40px;
-
-}
-
-.titulo1 h3 {
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(207, 46, 143);
-    position: absolute;
-    margin: 20px;
-    left: 38%;
-    top:110%;
-    
-}
-.titulo1 h4 {
-    font-size: 36px;
-    font-weight: 800;
-    margin-top: 590px;
-    color: rgb(19, 17, 18);
-    top: 55px;
-    position: absolute;
-    left: 760px;
-}
-
-.titulo1 h5 {
-    font-size: 20px;
-    margin-top: 1.25rem;
-    color: azure;
-
-}
-
-.left p {
-    color: inherit;
-    width: 70%;
-    font-size: 14px;
-
-}
-.contenedor10{
-    padding:60px 80px ;
-    background-color: var(--secondary-main);
-}
-  
-
-.contenedor22{
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(57, 46, 207);
-    margin: 50px;
-    left: 0%;
-    top: 50px;
-    
-}
-
-.container55{
-    position: absolute;
-    margin: 20px;
-    left: 40%;
-    top: 50cap;
-    text-align: center;
-}
-.container3{
-    background-color: rgba(3, 92, 3, 0.195);
-    width:80%;
-}
-.container3 input{
-    width:80%;
-}
-.container3 button{
-    align-items: right;
-    background-color: rgba(255, 255, 255, 0.804);
-    color: #827968;
+/* Estilos para los botones */
+.btn {
+    background-color: #007bff;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
-.container3 button:hover{
-    background-color:#827968;
-    color: #ebeae7;
-}
-.ubicacion{
-    align-content: end;
+
+.btn:hover {
+    background-color: #0056b3;
 }
