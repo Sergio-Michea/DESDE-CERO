@@ -83,6 +83,14 @@ body {
 .jumbotron h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    text-decoration-color: #343a40;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ff6b6b, #556270);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  
+   
 }
 
 #centro-pantalla {
