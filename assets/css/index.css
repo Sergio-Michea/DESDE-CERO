@@ -11,37 +11,48 @@ body {
     padding: 0 20px;
 }
 
-/* Estilos para el header */
-
-.navbar-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
+/* Estilos para el navbar */
+.navbar {
+    background-color: #222; /* Color de fondo del navbar */
+    padding: 10px 20px; /* Espaciado interno */
 }
 
-.nav-item {
-    display: inline-block;
-    margin-right: 20px;
+.navbar-toggler {
+    border: none; /* Eliminar borde del botón */
+    background-color: transparent; /* Color de fondo transparente para el botón del navbar */
+    color: #fff; /* Color del icono del botón del navbar */
 }
 
 .nav-link {
-    color: #070000;
-    text-decoration: none;
-    
+    color: #fff; /* Color de texto de los enlaces del navbar */
+    margin-right: 20px; /* Margen derecho entre enlaces */
+    transition: color 0.3s ease; /* Transición suave del color */
 }
 
-.nav-logo{
-    width: 100px; /* Ancho del logo */
-    height: 50px; /* Altura automática para mantener la proporción */
+.nav-link:hover {
+    color: #ffcc00; /* Cambiar color de texto al pasar el ratón */
+}
+
+.nav-logo {
+    width: 40px; /* Ancho de la imagen del logo */
+    height: auto; /* Altura automática para mantener la proporción */
     display: block; /* Para asegurar que no haya espacio adicional debajo del logo */
-    margin: 0 auto; /* Centrar el logo horizontalmente */
+    margin-right: 10px; /* Margen derecho */
+}
+
+.navbar-text {
+    color: #fff; /* Color de texto */
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.navbar-text:hover {
+    color: #ffcc00; /* Cambiar color de texto al pasar el ratón */
 }
 
 
 /* Estilos para el jumbotron */
 .jumbotron {
-    background-color: #b6d3f0;
+    background-color: #f3f5f7;
     padding: 50px 0;
     text-align: center;
 
