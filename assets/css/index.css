@@ -144,6 +144,26 @@ body {
 
 /* Estilos para el blog */
 
+.titulo1 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+text-align: center;
+}
+
+.titulo1 h3 {
+    color: blue;
+    font-size: 24px;
+}
+
+.titulo1 h4 {
+    font-weight: bold;
+}
+
+.titulo1 h5 {
+    font-style: italic;
+    color: #666;
+}
 
 .titulo2 {
     display: flex;
