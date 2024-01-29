@@ -10,6 +10,8 @@ Para ver este proyecyo haz click en el link en el siguiente link:
 
 https://landingpage-transporte-vertical.netlify.app/
 
+https://sergio-michea.github.io/Proyecto1_Landing_de_Venta/
+
 Uso
 
 Aquí hay algunas instrucciones sobre cómo usar este proyecto.
