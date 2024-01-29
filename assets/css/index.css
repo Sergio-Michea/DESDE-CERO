@@ -281,19 +281,30 @@ footer {
     color: #ffcc00;
 }
 
+/* Estilos para el contenedor de los botones de redes sociales */
 .social-links {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
+/* Estilos para cada botón de red social */
 .social-links a {
     color: #fff;
     text-decoration: none;
-    margin-right: 10px;
+    margin: 0 5px; /* Espaciado entre los botones */
     transition: color 0.3s ease;
 }
 
-.social-links a:hover {
-    color: #ffcc00;
+/* Media query para dispositivos pequeños */
+@media only screen and (max-width: 600px) {
+    .social-links {
+        flex-wrap: wrap; /* Permitir que los botones se envuelvan en múltiples líneas */
+    }
+    
+    .social-links a {
+        margin: 5px; /* Espaciado entre los botones */
+    }
 }
 
 /* Estilos para el botón personalizado */
