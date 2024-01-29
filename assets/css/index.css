@@ -11,42 +11,44 @@ body {
     padding: 0 20px;
 }
 
-/* Estilos para el navbar */
+/* Estilos para el header */
+
 .navbar {
-    background-color: #222; /* Color de fondo del navbar */
-    padding: 10px 20px; /* Espaciado interno */
+    background-color: rgb(13, 2, 35); /* Color de fondo del navbar */
+    position: relative; /* Posicionamiento relativo */
 }
 
 .navbar-toggler {
-    border: none; /* Eliminar borde del botón */
     background-color: transparent; /* Color de fondo transparente para el botón del navbar */
-    color: #fff; /* Color del icono del botón del navbar */
+    color: rgb(239, 6, 6); /* Color del icono del botón del navbar */
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .nav-link {
-    color: #fff; /* Color de texto de los enlaces del navbar */
-    margin-right: 20px; /* Margen derecho entre enlaces */
-    transition: color 0.3s ease; /* Transición suave del color */
+    color: white; /* Color de texto de los enlaces del navbar */
+    text-decoration: none;
 }
+
 
 .nav-link:hover {
     color: #ffcc00; /* Cambiar color de texto al pasar el ratón */
 }
 
 .nav-logo {
-    width: 40px; /* Ancho de la imagen del logo */
-    height: auto; /* Altura automática para mantener la proporción */
+    width: 100px; /* Ancho del logo */
+    height: 50px; /* Altura automática para mantener la proporción */
     display: block; /* Para asegurar que no haya espacio adicional debajo del logo */
-    margin-right: 10px; /* Margen derecho */
-}
-
-.navbar-text {
-    color: #fff; /* Color de texto */
-    transition: color 0.3s ease; /* Transición suave del color */
-}
-
-.navbar-text:hover {
-    color: #ffcc00; /* Cambiar color de texto al pasar el ratón */
+    margin: 0 auto; /* Centrar el logo horizontalmente */
 }
 
 
@@ -136,7 +138,7 @@ body {
 
 .registro{
     text-align: center;
-    background-color: #070000;
+    background-color: rgb(13, 2, 35);
     color: #f8f2f2;
 }
 
@@ -148,63 +150,95 @@ body {
     gap: 20px;
     justify-content: center;
     margin-left: auto;
-    margin-right: auto; /* Esto centra horizontalmente las tarjetas */
-
+    margin-right: auto;
+    background-color: rgb(13, 2, 35);
 }
 
-.card {
+/* Estilos para la tarjeta dentro de .titulo2 */
+.titulo2 .card {
     flex: 1;
     max-width: 300px;
     min-width: 200px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.card img.card-img-top {
+/* Estilos para la imagen en la parte superior de la tarjeta dentro de .titulo2 */
+.titulo2 .card img.card-img-top {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 8px 8px 0 0;
+    
 }
 
-.card-avatar {
+/* Estilos para el contenedor del avatar dentro de .titulo2 */
+.titulo2 .card-avatar {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 0 16px 12px;
+    padding: 12px 16px;
+    background-color: #f8f9fa;
+    border-radius: 0 0 8px 8px;
 }
 
-.card-avatar img {
+/* Estilos para la imagen del avatar dentro de .titulo2 */
+.titulo2 .card-avatar img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card-avatar div {
+/* Estilos para el contenido del avatar dentro de .titulo2 */
+.titulo2 .card-avatar div {
     display: flex;
     flex-direction: column;
 }
 
-.card-avatar h6 {
-    font-size: 14px;
+/* Estilos para el nombre en el avatar dentro de .titulo2 */
+.titulo2 .card-avatar h6 {
+    font-size: 16px;
     font-weight: bold;
     margin: 0;
+    color: #343a40;
 }
 
-.card-avatar span {
+/* Estilos para el subtítulo en el avatar dentro de .titulo2 */
+.titulo2 .card-avatar span {
     font-size: 14px;
-    color: var(--primary-main);
+    color: #6c757d;
+}
+/* Estilos generales del footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
 }
 
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display:block;
+    justify-content: space-between;
+}
 
-/* Estilos para el footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .footer-links {
-    margin-bottom: 20px;
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-links h6 {
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
 .footer-links ul {
@@ -212,25 +246,50 @@ footer {
     padding: 0;
 }
 
-.footer-links li {
-    display: inline-block;
-    margin-right: 20px;
+.footer-links ul li {
+    margin-bottom: 10px;
 }
 
-.footer-links a {
+.footer-links ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Estilos para los botones */
-.btn {
-    background-color: #007bff;
+.footer-links ul li a:hover {
+    color: #ffcc00;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.social-links a:hover {
+    color: #ffcc00;
+}
+
+/* Estilos para el botón personalizado */
+.custom-btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #222;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #f5c200;
 }
